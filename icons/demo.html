@@ -1,0 +1,2076 @@
+<!doctype>
+<html lang="en">
+
+  <head>
+    <title>SVG Sprite Demo | Orion Icon Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    />
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"
+    />
+    <style>
+      html {
+          box-sizing: border-box;
+        }
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1.125rem;
+        }
+        ._1bo7bzx{font-family:Menlo, mono;font-size:.85em;}._1oymxsi{color:#ff4d63;}._1tt2u3t{-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-box-align:center;-ms-flex-align:center;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;background-color:#121418;-webkit-justify-content:space-between;justify-content:space-between;height:66px;padding:0 28px;color:white;}._dl5j6p{font-weight:300;max-width:33%;font-size:1em;}._1iurgbx{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}._1l5hckq{padding:1em 3em;}._kp2n83{font-size:.7em;text-align:center;}._o1cg4g{color:#0092FF;text-decoration:none;}._o1cg4g:hover{text-decoration:underline;}._14gdf42{line-height:1.5;}._ovghcs{color:inherit;text-decoration:none;}._ovghcs:hover:after{content:"#";color:#0092FF;margin-left:2px;opacity:.3;-webkit-transition:opacity .3s;-moz-transition:opacity .3s;transition:opacity .3s;}._ovghcs:active:after{opacity:1;}._1dqtju9{color:#007aff;}._fr5wn{padding-left:24px;border-left:1px solid rgba(0,0,0,0.1);margin-left:12px;margin-bottom:48px;}._1bmg5vo{color:#202020;tab-ssize:4px;overflow-x:auto;padding:1.5em;line-height:1.5;background:rgba(0,0,0,0.05);font-size:.9em;}._jro6t0{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}._53480w{display:none;}._53480w:checked + label span{-webkit-transform:translateX(52px);-ms-transform:translateX(52px);transform:translateX(52px);}._53480w:checked + label:before{color:inherit;}._53480w:checked + label:after{color:#007aff;}._53480w:checked ~ .externalCheckboxHelper:after{content:"External SVG Sprite";}._1uuc6xn{cursor:pointer;width:90px;height:40px;display:block;background-color:#f7f7f7;color:#8c8c8c;border-radius:32px;margin:12px 24px;position:relative;}._1uuc6xn:before{content:"‹a›";position:absolute;right:-webkit-calc(100% + 4px);right:-moz-calc(100% + 4px);right:calc(100% + 4px);top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);color:#007aff;}._1uuc6xn:after{content:"‹b›";position:absolute;left:-webkit-calc(100% + 4px);left:-moz-calc(100% + 4px);left:calc(100% + 4px);top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}._10r524x{background-color:#4a4a4a;border-radius:50%;height:36px;left:0px;-webkit-transform:translateX(2px);-ms-transform:translateX(2px);transform:translateX(2px);position:absolute;top:2px;-webkit-transition:-webkit-transform .2s ease,transform .2s ease;-moz-transition:transform .2s ease;transition:-ms-transform .2s ease,-webkit-transform .2s ease,transform .2s ease;width:36px;z-index:1;}._qjqtm8:after{content:"Inline SVG Sprite";}._jcgzno{padding:.3em .5em;outline:0px;margin-left:12px;}._jcgzno:disabled{opacity:0.3;}._1r58n10{overflow:auto;padding:40px;margin:0px;list-style:none;padding-bottom:40px;}._fnhcyz{width:100%;float:left;-moz-box-sizing:border-box;box-sizing:border-box;display:block;-webkit-transition:opacity 250ms, box-shadow 250ms;-moz-transition:opacity 250ms, box-shadow 250ms;transition:opacity 250ms, box-shadow 250ms;cursor:pointer;position:relative;}@media (min-width: 767px){._fnhcyz{width:50%;}}@media (min-width: 1023px){._fnhcyz{width:33.333%;}}@media (min-width: 1199px){._fnhcyz{width:20%;}}._fnhcyz:after{content:"";position:absolute;z-index:-1;top:0px;right:0px;bottom:0px;left:0px;opacity:0;box-shadow:0 .5em 3em rgba(0,0,0,.1);-webkit-transition:opacity .3s;-moz-transition:opacity .3s;transition:opacity .3s;}._fnhcyz:hover:after{opacity:1;z-index:1;}._fnhcyz:before{content:"";padding-top:100%;display:block;}._fnhcyz:hover .orion-sprite__id{opacity:1;}._fnhcyz:hover .orion-sprite__code{opacity:1;}._1dclzhk{-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-box-align:center;-ms-flex-align:center;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:space-between;justify-content:space-between;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:absolute;top:0px;right:0px;bottom:0px;left:0px;padding:.5em 1em;}._19wnp26{width:100%;font-size:.7em;text-align:center;opacity:0;color:#777;-webkit-transition:opacity 250ms;-moz-transition:opacity 250ms;transition:opacity 250ms;}._1u0lyeu{width:64px;height:64px;}._190hxbq{width:100%;height:100%;}._1mcpc5v{font-size:.7em;padding:.5em 1em;width:100%;z-index:2;border-radius:2px;opacity:.3;-webkit-transition:opacity .3s;-moz-transition:opacity .3s;transition:opacity .3s;}._duacj0{white-space:pre;display:inline-block;font-size:.7em;line-height:1.5;background:rgba(0,0,0,0.05);tab-ssize:4px;color:#202020;margin-top:1em;width:100%;outline:0px;border-left:4px solid #007aff;}._1hgbkkp{list-style:none;margin:0px;padding:0px;padding-left:1em;line-height:1.5em;}._19kenml{-webkit-box-align:start;-ms-flex-align:start;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-align-items:flex-start;align-items:flex-start;color:#fff;}._15372er{display:inline-block;vertical-align:middle;width:32px;height:32px;}._ksd372{display:inline-block;vertical-align:middle;width:80px;height:25px;margin-left:10px;}
+    </style>
+  </head>
+
+  <body>
+    <svg width="0" height="0" class="hidden">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="close-1">
+        <title>Close</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M41.999 20.002l-22 22m22 0L20 20"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="checkmark-1">
+        <title>Checkmark</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M16 33l11 11 21-22"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="rotate-left-1">
+        <title>Rotate Left</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M10.168 34.947a26.016 26.016 0 1 1 7.45 15.432" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M2 23l8.168 11.947L20.986 25" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="portfolio-grid-1">
+        <title>Portfolio Grid</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M2 2h12v12H2zm24 0h12v12H26zm24 0h12v12H50zM2 50h12v12H2z"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M26 50h12v12H26zm24 0h12v12H50z" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M2 25.988h12v12H2z" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M26 25.988h12v12H26zm24 0h12v12H50z" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="more-1">
+        <title>More</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <circle data-name="layer3"
+        cx="8" cy="32" r="6" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer2" cx="56" cy="32" r="6" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="32" cy="32" r="6" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="speed-1">
+        <title>Speed</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <circle data-name="layer2"
+        cx="32" cy="32" r="30" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M8 32h6M32 8v5.999M50 32h6M45 20l4-4" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M15.183 16.544A.975.975 0 0 1 15 16a1 1 0 0 1 1.489-.873l18.748 11.821a5.999 5.999 0 1 1-8.153 8.486z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="security-shield-1">
+        <title>Security Shield</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M6 2h52v22.064A41.973 41.973 0 0 1 31.994 62 41.97 41.97 0 0 1 6 24.064z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M22 27l9 9 15-16" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="food-1">
+        <title>Food</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M50.5 37v23a2 2 0 0 1-2 2 2 2 0 0 1-2-2V37" fill="none" stroke="#202020"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2" d="M18.5 17V2m4 0v15m4-15h-12l-1 20c0 3.2 2.1 5.2 5 5.8V60a2 2 0 0 0 4 0V27.8c2.9-.6 5-2.6 5-5.8zm24 35V2a10 10 0 0 0-10 10v20a5 5 0 0 0 5 5z"
+        style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="hot-coffee-1">
+        <title>Hot Coffee</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" stroke="#202020" fill="none"
+        d="M52 17.965v22.857c0 9.467-9.582 17.143-19.049 17.143h-1.9C21.58 57.965 12 50.289 12 40.822V17.965zM52 22h1.016A8.984 8.984 0 0 1 62 30.982a8.982 8.982 0 0 1-8.982 8.982H52"
+        data-name="layer2" style="stroke:var(--layer1, #202020)"></path>
+        <path d="M32 13.998v-12m-12.002 12V8.002m24.004 5.996V8.002M62 60a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h56a2 2 0 0 1 2 2z"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#202020"
+        fill="none" data-name="layer1" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="tea-cup-1">
+        <title>Tea Cup</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" d="M16 3v16m6 16V25a6 6 0 0 0-6-6 6 6 0 0 0-6 6v10z" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M48 3v54a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V3zm0 10a14 14 0 0 1 14 14v4a14 14 0 0 1-14 14"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M48 41a10 10 0 0 0 10-10v-4a10 10 0 0 0-10-10"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="muffin-1">
+        <title>Muffin</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M10.5 36.5s2.6 20.7 2.8 23.1A2.4 2.4 0 0 0 16 62h31.9a2.4 2.4 0 0 0 2.6-2.4c.3-2.4 2.9-23.4 2.9-23.4M20 46l1.6 16M44 46l-1.6 16M32 46v16"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M32 2C18.3 2 6 16.7 6 28s11.3 10 16 10h24.1c4.8 0 11.7-2 11.9-10S50.5 2 32 2zM20 20l-2 2m14-2l-2 2m-2-10l-2 2m14-2l-2 2m6 6l-2 2"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="man-1">
+        <title>Man</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path stroke-width="2"
+        stroke-miterlimit="10" stroke="#202020" fill="none" d="M41.713 48.744c-1.968-1.476-1.71-3.069-1.71-4.244v-4m-16 1v3c0 1.285.425 3.083-2.194 4.67"
+        data-name="layer2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path stroke-width="2" stroke-miterlimit="10" stroke="#202020"
+        fill="none" d="M37.601 42.5a16.786 16.786 0 0 0 7.168-10.135c3.026-.037 4.234-2.931 4.234-6.937 0-1.994 0-4.928-3-4.928v-2m-29 0v2.006c-2-.006-3 2.994-3 4.988 0 4.006 1.391 7.006 4.436 7.006h.002a15.21 15.21 0 0 0 7.17 10m20.392-24v-2c0-10.4-7.373-14-14-14s-15 3.517-15 13.916V18.5c12 0 13-8 21-8 7.459 0 8 8 8 8z"
+        data-name="layer2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path stroke-width="2" stroke-miterlimit="10" stroke="#202020"
+        fill="none" d="M14.003 51.5c-12.61 2-12.001 11-12.001 11h30L21.809 49.17c-1.458.885-3.856 1.703-7.806 2.33zm36 0c-4.436-.74-6.91-1.72-8.29-2.756L32.002 62.5h30s0-9-12-11z"
+        data-name="layer1" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="woman-1">
+        <title>Woman</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path stroke-width="2"
+        stroke-miterlimit="10" stroke="#202020" fill="none" d="M32 2c-6.627 0-13.992 4-13.992 14.399V26c0 7.18 3.27 13.379 8 16.267m11.984 0c4.73-2.888 8-9.087 8-16.267v-9.601C45.992 6 38.627 2 32 2"
+        data-name="layer2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path stroke-width="2" stroke-miterlimit="10" stroke="#202020"
+        fill="none" d="M46 18C26 18 26 3.174 26 3.174S27.416 20 18 20m27.473 30.357C39.003 48.835 39 45.697 39 44v-2M28 62h8M25 42v2c0 1.684-.002 4.813-6.794 6.333M18.008 26S17 42 13 46c4 4 4.926 4.394 4.926 4.394"
+        data-name="layer2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path stroke-width="2" stroke-miterlimit="10" stroke="#202020"
+        fill="none" d="M45.992 26S47 42 51 46c-4 4-6.095 4.217-6.095 4.217" data-name="layer2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path stroke-width="2" stroke-miterlimit="10" stroke="#202020"
+        fill="none" d="M62 62a13.788 13.788 0 0 0-12.422-11 30.574 30.574 0 0 1-4.105-.643L36 62zM13.61 51A12.46 12.46 0 0 0 2 62h26l-9.794-11.667a34.259 34.259 0 0 1-4.597.667z"
+        data-name="layer1" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="user-1">
+        <title>User</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        d="M46 26c0 6.1-3.4 11.5-7 14.8V44c0 2 1 5.1 11 7a15.5 15.5 0 0 1 12 11H2a13.4 13.4 0 0 1 11-11c10-1.8 12-5 12-7v-3.2c-3.6-3.3-7-8.6-7-14.8v-9.6C18 6 25.4 2 32 2s14 4 14 14.4z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="quality-1">
+        <title>Quality</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M19 38.9l-3 23 16-6 16 6-2.9-23M32 45.8v10.1"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer1" cx="32" cy="23.9" r="12" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M32 4.7l4.6-2.6 3.1 4.2 5.3-.5 1.1 5.2 5.1 1.6-1.1 5.2 3.9 3.6-3.1 4.3 2.1 4.8-4.5 2.7-.1 5.3-5.2.6-2.2 4.8-5-1.6-4 3.5-4-3.5-5 1.6-2.2-4.8-5.2-.6-.1-5.3-4.5-2.7 2.1-4.8-3.1-4.3 3.9-3.6-1.1-5.2 5.1-1.6L19 5.8l5.3.5 3.1-4.2L32 4.7z"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="reading-1">
+        <title>Reading</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        d="M54 12h8v44H42c-6 0-10 2-10 3.8" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" d="M32 16c0-3.6 4-12 12.6-12H54v46H43.9C37.8 50 32 54.2 32 60"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer1" d="M32 16c0-2-4-4-14-4H2v44h20c6 0 10 2 10 3.8z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="news-1">
+        <title>News</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        d="M32 16C32 8 16 6 2 6v44c14 0 30 2 30 10z" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" d="M24 18.5a60.7 60.7 0 0 0-14-2.3M24 26a60.7 60.7 0 0 0-14-2.3M24 34a60.7 60.7 0 0 0-14-2.3m14 9.8a60.7 60.7 0 0 0-14-2.3m30-20.7a60.7 60.7 0 0 1 14-2.3M40 26a60.7 60.7 0 0 1 14-2.3M40 34a60.7 60.7 0 0 1 14-2.3m-14 9.8a60.7 60.7 0 0 1 14-2.3"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer1" d="M32 16C32 8 48 6 62 6v44c-14 0-30 2-30 10"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="sun-1">
+        <title>Sun</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <circle data-name="layer2"
+        cx="32" cy="32" r="14" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M32 2v8m0 44v8m30-30h-8m-44 0H2m8.8-21.2l5.6 5.6m31.2 31.2l5.6 5.6m0-42.4l-5.6 5.6M16.4 47.6l-5.6 5.6"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="camera-1">
+        <title>Camera</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M59 17H46.6L40 9H24l-6.6 8H5a3 3 0 0 0-3 3v30a3 3 0 0 0 3 3h54a3 3 0 0 0 3-3V20a3 3 0 0 0-3-3z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer1" cx="32" cy="33" r="14" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="54" cy="25" r="1" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="32" cy="33" r="6" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="retro-camera-1">
+        <title>Retro Camera</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M5 16v-6h10v6"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M20 12v4H2v36h60V12H20zM2 22h30m0 0h30" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer1" cx="32" cy="34" r="12" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="32" cy="34" r="4" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer1" d="M55 30a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2 2 2 0 0 1 2-2h2a2 2 0 0 1 2 2z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="play-button-1">
+        <title>Play Button</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <rect data-name="layer2"
+        x="2" y="12" width="60" height="40" rx="10.4" ry="10.4" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></rect>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M24 22v20l20-10-20-10z" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="tv-1">
+        <title>TV</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M20.7 22a12 12 0 0 1 22.6 0" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <rect data-name="layer1" x="2" y="22" width="60" height="40" rx="2"
+        ry="2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M25.8 15.8L12.1 2.1m26.1 13.7L51.9 2.1" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer2" cx="54" cy="38" r="1" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer2" cx="54" cy="45" r="1" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer2" cx="54" cy="30" r="2" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <rect data-name="layer1" x="6" y="26" width="40" height="29"
+        rx="3" ry="3" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="time-1">
+        <title>Time</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <circle data-name="layer2"
+        cx="32" cy="32" r="30" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" d="M32 10v23l13 7" stroke-linejoin="round"
+        style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="deadline-1">
+        <title>Deadline</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path stroke-width="2"
+        stroke-miterlimit="10" stroke-linecap="round" stroke="#202020" fill="none"
+        d="M29.375 35.625L16.293 18.707a1.007 1.007 0 0 1 1.414-1.414l16.918 13.082A3.739 3.739 0 0 1 30 36.254a3.914 3.914 0 0 1-.625-.629z"
+        data-name="layer2" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+        <path stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+        stroke="#202020" fill="none" d="M10.787 10.787A30 30 0 1 0 32 2v13" data-name="layer1"
+        stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="heartbeat-1">
+        <title>Heartbeat</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M54.132 37.978c-7.756 12.073-22.055 20.058-22.055 20.058S18.218 50.34 10.33 39M7.9 35A23.91 23.91 0 0 1 5 24C5 5.04 28 5 32 19c4-14 27-14 27 4a25.548 25.548 0 0 1-2.644 11"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M2 35h14.76a.5.5 0 0 0 .39-.188l3.437-4.3a.5.5 0 0 1 .8.022l4.166 5.833a.5.5 0 0 0 .839-.039l6.1-10.459a.5.5 0 0 1 .894.062l6.2 15.049a.5.5 0 0 0 .91.033l3.371-6.741a.5.5 0 0 1 .442-.272H62"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="first-aid-kit-1">
+        <title>First Aid Kit</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" d="M43 33h-8v-8h-6v8h-8v6h8v8h6v-8h8v-6z" stroke-linejoin="round"
+        style="stroke:var(--layer1, #202020)"></path>
+        <rect data-name="layer1" x="2" y="15" width="60" height="42" rx="6"
+        ry="6" fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></rect>
+        <path data-name="layer1" d="M23 15v-4a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v4"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="hospital-1">
+        <title>Hospital</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" d="M6 56V16m52 0v40" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" d="M23 45h18v16H23z" stroke-linejoin="round"
+        style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" d="M23 61H2v-5h21m18 0h21v5H41"
+        stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" d="M32 45v16" stroke-linejoin="round"
+        style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" d="M22.756 16H2v-6h20.063m19.874 0H62v6H41.244M11 21h6v6h-6zm36 0h6v6h-6zM11 33h6v6h-6zm0 12h6v6h-6zm36 0h6v6h-6zM23 33h6v6h-6zm12 0h6v6h-6zm12 0h6v6h-6zM29 21.542V27h-6v-6h4.636m8.728 0H41v6h-6v-5.458"
+        stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer1" cx="32" cy="12" r="10" fill="none" stroke="#202020"
+        stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" d="M32 8v8m-4-4h8" stroke-linejoin="round"
+        style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="map-pin-1">
+        <title>Map Pin</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path stroke-width="2"
+        stroke-miterlimit="10" stroke="#202020" fill="none" d="M32 2a20 20 0 0 0-20 20c0 18 20 39 20 39s20-21 20-39A20 20 0 0 0 32 2z"
+        data-name="layer1" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="pin-1">
+        <title>Pin</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path stroke-width="2"
+        stroke-miterlimit="10" stroke="#202020" fill="none" d="M32 2a20 20 0 0 0-20 20c0 18 20 39 20 39s20-21 20-39A20 20 0 0 0 32 2z"
+        data-name="layer2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle stroke-width="2" stroke-miterlimit="10" stroke="#202020"
+        fill="none" r="8" cy="22" cx="32" data-name="layer1" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="map-marker-1">
+        <title>Map Marker</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path d="M43.2 48.1l-7.2-4L18 52 2 44.1V4l16 7.9L36 3l18 8.9v20.3M36 44.1V3M18 52V11.9"
+        stroke-width="2" stroke-miterlimit="10" stroke="#202020" fill="none" data-name="layer2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path stroke-width="2" stroke-miterlimit="10" stroke="#202020"
+        fill="none" d="M52 32a10 10 0 0 0-10 10c0 9 10 19 10 19s10-10 10-19a10 10 0 0 0-10-10z"
+        data-name="layer1" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle stroke-width="2" stroke-miterlimit="10" stroke="#202020"
+        fill="none" r="3" cy="42" cx="52" data-name="layer1" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="cart-1">
+        <title>Cart</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M2 6h10l10 40h32l8-24H16"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer1" cx="23" cy="54" r="4" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="49" cy="54" r="4" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="shopping-cart-1">
+        <title>Shopping Cart</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <circle data-name="layer2"
+        cx="23" cy="56" r="4" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer2" cx="49" cy="56" r="4" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer1" d="M3 4h8l4 16h46l-8 24H23a4 4 0 0 0-4 4 4 4 0 0 0 4 4h32"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="paper-bag-1">
+        <title>Paper Bag</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M8 22h48v40H8z"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M22 26V12A10 10 0 0 1 32 2a10 10 0 0 1 10 10v14"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="retail-bag-1">
+        <title>Retail Bag</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M4 14h56v48H4zm2 0V2h52v12"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M6.2 2.1L16 8 6 14M57.8 2.1L48 8l10 6" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M42 24a10 10 0 0 1-20 0" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="dollar-sign-1">
+        <title>Dollar Sign</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path stroke-width="2"
+        stroke-miterlimit="10" stroke="#202020" fill="none" d="M39.889 24A8 8 0 0 0 32 17.334c-4.418 0-8 2.914-8 7.333s4 6.42 8 7.334c4 .9 8 2.917 8 7.334s-3.582 7.333-8 7.333a8 8 0 0 1-8-8"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path d="M32 17.334v-5.335m0 40.003v-5.335" stroke-width="2" stroke-miterlimit="10"
+        stroke="#202020" fill="none" data-name="layer2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle stroke-width="2" stroke-miterlimit="10" stroke="#202020"
+        fill="none" r="30" cy="32" cx="32" data-name="layer1" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="dollar-badge-1">
+        <title>Dollar Badge</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path stroke-width="2"
+        stroke-miterlimit="10" stroke="#202020" fill="none" d="M39.889 24A8 8 0 0 0 32 17.334c-4.418 0-8 2.914-8 7.333s4 6.42 8 7.334c4 .9 8 2.917 8 7.334s-3.582 7.333-8 7.333a8 8 0 0 1-8-8"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path d="M32 17.334v-5.335m0 40.003v-5.335m0-42.196l5.967-2.472 4.568 4.567 6.459.001 2.471 5.967 5.969 2.473v6.458L62 26.032l-2.471 5.967L62 37.967l-4.566 4.568v6.458l-5.969 2.472-2.471 5.967-6.459.001-4.568 4.568L32 59.529l-5.967 2.472-4.568-4.568-6.459-.001-2.471-5.967-5.969-2.472v-6.458L2 37.967l2.471-5.968L2 26.032l4.566-4.567v-6.458l5.969-2.473 2.471-5.967 6.459-.001 4.568-4.567L32 4.471z"
+        stroke-width="2" stroke-miterlimit="10" stroke="#202020" fill="none" data-name="layer2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="credit-card-1">
+        <title>Credit Card</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M62 16a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v7h60zM2 23v25a3 3 0 0 0 3 3h54a3 3 0 0 0 3-3V23"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M10 31h20m18 0h6m-44 8h8" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="pay-by-card-1">
+        <title>Pay by Card</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        d="M40 20l8.8 8.7C51.2 31.1 52 34.2 52 40c0 8.6-.1 22-.1 22M22 44a20 20 0 0 0 3.3 11.5C28.1 60 28 61.3 28 62"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" d="M29.8 44H14a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h24a2 2 0 0 1 2 2v31M30 2v23"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer1" d="M44.1 39.1L28.4 23.5a5 5 0 0 0-7 0 5 5 0 0 0 0 7l8.6 8.6s-2.6 8 6 14.9"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="bank-cards-1">
+        <title>Bank Cards</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M10.3 29l-2.2-6.1a2.4 2.4 0 0 1 1.4-3.1L50.1 5.1a2.4 2.4 0 0 1 3.1 1.4l8.7 24a2.4 2.4 0 0 1-1.4 3.1L50 37.4m-39.9-9.2L55 11.8m-8.3 9.8l4.5-1.6"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <rect data-name="layer1" x="2" y="29" width="48" height="30" rx="2.4"
+        ry="2.4" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M10 43h14m12-6h6M10 51h2m8 0h2m8 0h2m8 0h2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="money-box-1">
+        <title>Money Box</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        d="M28.8 19.5a21.1 21.1 0 0 0-7.1 2.2c-7.9 4.2-9.2 11-9.2 16.3s2.3 13.1 10.8 20h7.3v-4l8.9.5a20.1 20.1 0 0 0 2.3 3.5h6.7v-6a47.9 47.9 0 0 0 6-5c2.9.3 5.9-2 7-8.7 0-1-.5-1.3-1-1.3a6.8 6.8 0 0 1-3-1c-.4-.5-1.6-4.7-3.8-8a11.7 11.7 0 0 1 4.1-5.2c-2.8-1.4-5.7-2.4-11.4-1.8-1.5-.3-4-.9-6.4-1.3"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <circle data-name="layer2" cx="34.5" cy="14" r="8" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></circle>
+        <path data-name="layer1" d="M12.5 38c-2.9-.3-10-1.4-10 2s1.9 3.4 3.8 2.6 4.3-5.5-3.8-8.6m25.7-8.9a20.1 20.1 0 0 1 12.7-.1"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <circle data-name="layer1" cx="48.5" cy="34" r="1" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="pay-1">
+        <title>Pay</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M52 37h10v22H52zm0 18.2c-2 0-14.9 5.8-22 5.8-4.2 0-7.9-2.2-16-6-3.8-1.8-12-6.6-12-10s10.9 1.1 20.1 4"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <circle data-name="layer2" cx="34.1" cy="11" r="8" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></circle>
+        <circle data-name="layer2" cx="20" cy="29" r="8" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></circle>
+        <path data-name="layer1" d="M36.1 53h-10a4 4 0 0 1-4-4 4 4 0 0 1 4-4h4c12 0 8-6 22-6"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="delivery-truck-1">
+        <title>Delivery Truck</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M38 19h14l6 12 4 4v8"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M2 43V7h36v36" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer2, #202020)"></path>
+        <circle data-name="layer1" cx="14" cy="51" r="6" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer2, #202020)"></circle>
+        <circle data-name="layer1" cx="50" cy="51" r="6" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></circle>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M44 51H20M8 51H2v-8h60v8h-6" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="delivery-time-1">
+        <title>Delivery Time</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M62 46v-5l-8-7h-8"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer2" cx="24" cy="54" r="4" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer2" cx="54" cy="54" r="4" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M50 54H28m-8 0h-4v-8h46v8h-4M24.5 24H46v22m-30 0V29.8M2 38h6m-2 8h2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer1" cx="14" cy="18" r="12" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M14 12v8h6" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="giftbox-1">
+        <title>Giftbox</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M56 34v28H8V34M4 22h56v12H4z"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M24 22v40m16-40v40M26.2 5A7.4 7.4 0 0 0 20 2a8 8 0 0 0-5.3 14c4.2 3.7 17.3 6 17.3 6 0-6-3.4-14.3-5.8-17zm11.6 0A7.4 7.4 0 0 1 44 2a8 8 0 0 1 5.3 14C45.1 19.7 32 22 32 22c0-6 3.4-14.3 5.8-17z"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="tag-1">
+        <title>Tag</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M25.6 61L3 38.4 38.4 3l21.2 1.4L61 25.6 25.6 61z"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer1" cx="48" cy="16" r="4" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="pie-chart-1">
+        <title>Pie Chart</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        d="M36 2v26h26A26 26 0 0 0 36 2z" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" d="M28 10a26 26 0 1 0 18.4 44.4L28 36z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer1" d="M40 36l16.6 15.9A25.8 25.8 0 0 0 62 36z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="sedan-1">
+        <title>Sedan</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M48 28l-5.5-10a3.7 3.7 0 0 0-3.1-2H17.3a3.2 3.2 0 0 0-2.6 2l-5 10M58 42h4V31a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v11h4m12 0h28"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer1" cx="12" cy="42" r="6" fill="none" stroke="#202020"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="52" cy="42" r="6" fill="none"
+        stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="document-saved-1">
+        <title>Document Saved</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M10 2v60h44V18L38 2H10z"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M38 2v16h16" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M42.7 28.1l-14 14-7-7" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="calls-1">
+        <title>Calls</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        d="M58.9 47l-10.4-6.8a4.8 4.8 0 0 0-6.5 1.3c-2.4 2.9-5.3 7.7-16.2-3.2S19.6 24.4 22.5 22a4.8 4.8 0 0 0 1.3-6.5L17 5.1c-.9-1.3-2.1-3.4-4.9-3S2 6.6 2 15.6s7.1 20 16.8 29.7S39.5 62 48.4 62s13.2-8 13.5-10-1.7-4.1-3-5z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="speaker-call-1">
+        <title>Speaker Call</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M50.4 49.3c1.1.8 2.9 1.8 2.6 4.2S49.1 62 41.5 62s-17-6-25.2-14.2S2 30.2 2 22.5 8.8 11.3 10.5 11s3.4 1.5 4.2 2.6l5.8 8.8a4.1 4.1 0 0 1-1.1 5.6c-2.5 2-6.6 4.5 2.8 13.8S34 47.1 36 44.6a4.1 4.1 0 0 1 5.6-1.1z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M30 2a32 32 0 0 1 32 32M30 12a22 22 0 0 1 22 22M30 23a11 11 0 0 1 11 11"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="landline-1">
+        <title>Landline</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M52 26.3V53a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6V26.3" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+        <rect data-name="layer2" x="20" y="30" width="4" height="4" rx="1"
+        ry="1" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <rect data-name="layer2" x="30" y="30" width="4" height="4" rx="1"
+        ry="1" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <rect data-name="layer2" x="40" y="30" width="4" height="4" rx="1"
+        ry="1" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <rect data-name="layer2" x="20" y="39" width="4" height="4" rx="1"
+        ry="1" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <rect data-name="layer2" x="30" y="39" width="4" height="4" rx="1"
+        ry="1" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <rect data-name="layer2" x="40" y="39" width="4" height="4" rx="1"
+        ry="1" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <rect data-name="layer2" x="20" y="48" width="4" height="4" rx="1"
+        ry="1" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <rect data-name="layer2" x="30" y="48" width="4" height="4" rx="1"
+        ry="1" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <rect data-name="layer2" x="40" y="48" width="4" height="4" rx="1"
+        ry="1" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <path data-name="layer1" d="M17.8 24.7a3.9 3.9 0 0 0 3-4.4c-.3-3-1.4-7.3 11.2-7.3s11.5 4.3 11.2 7.3a3.9 3.9 0 0 0 3 4.4l9.9 2c1.3.2 3.2.8 4.6-1.1a11.4 11.4 0 0 0-2-13.4C53.5 7.2 43.1 5 32 5S10.5 7.2 5.3 12.3a11.4 11.4 0 0 0-2 13.4c1.4 1.8 3.3 1.3 4.6 1.1z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="smartphone-1">
+        <title>Smartphone</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" d="M15 10h34M15 48h34" style="stroke:var(--layer1, #202020)"></path>
+        <rect data-name="layer1" x="15" y="2" width="34" height="60" rx="4"
+        ry="4" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" style="stroke:var(--layer1, #202020)"></rect>
+        <circle data-name="layer1" cx="32" cy="55" r="2" fill="none" stroke="#202020"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="chats-1">
+        <title>Chats</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M48.5 36.5c.7.4 1.7 1.1 1.5 2.5a7.2 7.2 0 0 1-6.8 5c-4.5 0-10-3.5-14.8-8.4S20 25.3 20 20.8a7.2 7.2 0 0 1 5-6.8c1.4-.2 2 .9 2.5 1.5l3.4 5.2a2.4 2.4 0 0 1-.6 3.3c-1.5 1.2-2.9 1.6 2.6 7.1s5.9 4.1 7.1 2.6a2.4 2.4 0 0 1 3.3-.6z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M34 2A28 28 0 0 0 9.3 43.2L3.2 60.8l17.5-6.1A28 28 0 1 0 34 2z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="24h-assistance-1">
+        <title>24h Assistance</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        d="M2 10h34V6a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v52a4 4 0 0 0 4 4h26a4 4 0 0 0 4-4V46m0 2H2"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2" d="M54 18l-6 14h14m-4-6v12m-14 0H32l8.5-10v-.2a6 6 0 0 0-8.5-8.2"
+        style="stroke:var(--layer2, #202020)"></path>
+        <circle data-name="layer1" cx="19" cy="55" r="1" fill="none" stroke="#202020"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="stroke:var(--layer2, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="share-1">
+        <title>Share</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M20.9 36.5l22.2 11m0-31l-22.2 11"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer1" cx="12" cy="32" r="10" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="52" cy="12" r="10" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="52" cy="52" r="10" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="envelope-1">
+        <title>Envelope</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M2 12l30 27.4L62 12"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M2 12h60v40H2z" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="paper-plane-1">
+        <title>Paper Plane</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M26 38v21l10.3-14.6"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M3 29L59 5l-9 48-24-15-23-9zM59 5L26 38" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="chat-bubble-1">
+        <title>Chat Bubble</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M5 59l18.8-6.9a37.1 37.1 0 0 0 8.2.9c16.6 0 30-10.7 30-24S48.6 5 32 5 2 15.7 2 29c0 6.7 3.5 12.8 9.1 17.2z"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer1" cx="20" cy="29" r="2" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="32" cy="29" r="2" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="44" cy="29" r="2" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="mental-illness-1">
+        <title>Mental Illness</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <circle data-name="layer2"
+        cx="30" cy="21" r="12" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" d="M36 19h-4v-4h-4v4h-4v4h4v4h4v-4h4v-4z"
+        stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M32.748 61.828a.249.249 0 0 0 .37-.107C33.853 60.01 37.775 51 39 51c2 0 5.938 2 9 2s2.488-7.083 3.445-9.973S53 38.445 53 37c3.828-.385 3.134-1.581 2.655-2.737S51 27.867 51 27c0-1 1-4.074 1-6 0-8.764-5-19-21.991-19C13.359 2 8 14.258 8 21s1.895 11.785 4 14 4 4.244 4 8a9.538 9.538 0 0 1-2 6z"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="mental-health-1">
+        <title>Mental Health</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        d="M32.748 61.828a.249.249 0 0 0 .37-.107C33.853 60.01 37.775 51 39 51c2 0 5.938 2 9 2s2.488-7.083 3.445-9.973S53 38.445 53 37c3.828-.385 3.134-1.581 2.655-2.737S51 27.867 51 27c0-1 1-4.074 1-6 0-8.764-5-19-21.991-19C13.359 2 8 14.258 8 21s1.895 11.785 4 14 4 4.244 4 8a9.538 9.538 0 0 1-2 6z"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M25 8c5.965-1.193 17.762-.476 20 10 .864 4.119 1.2 8.237-8 9s-13.288 1.22-14 3-1 6-3 6a1.789 1.789 0 0 1-2-2c0-1.856-1-4-2-6-.834-1.668-6-17 9-20z"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" d="M34 22c2-2 6-2 6.834 1.386a2.636 2.636 0 0 1-1.7 3.35M31 21c-3 1-3.831 4.262-2 6m7.91-18.194c1.257 3.141.378 5.821-1.91 7.194m7.4-3.4c.658 3.362-.4 5.4-3.4 5.4M30.292 7.625A4.3 4.3 0 0 1 32 13m-2 4c-1-2-4.373-2.034-6 0m-2.156-8c3.407.458 6.023 3.093 5.133 6.5M22 16c-3-.813-2.953-4.229-2.752-5.719M19 19a2.558 2.558 0 0 0-4.422 0M25 20c-2 0-4 3-1 5m-1.488-2.847c-2.7-.407-6.491 1.158-6.778 5"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="arrow-target-1">
+        <title>Arrow Target</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <circle data-name="layer2"
+        cx="25" cy="29.6" r="23" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer2" cx="25" cy="29.6" r="14" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="25" cy="29.6" r="4" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M12 48.6l-6 10m32-10l6 10" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M25 29.7l29.6-17.1 2-7.2m-2 7.2L62 15" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="target-1">
+        <title>Target</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <circle data-name="layer2"
+        cx="32" cy="32" r="30" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="32" cy="32" r="20" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer2" cx="32" cy="32" r="10" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="32" cy="32" r="2" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="sales-up-1">
+        <title>Sales Up</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M48 2h8v8"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M8 30l18-16 12 6L56 2m-4 60V22h8v40" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M36 62V42h8v20" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M20 62V36h8v26" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M4 62V50h8v12" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M62 62H2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer2, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="statistic-1">
+        <title>Statistic</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M11 2v60h44V18L39 2H11z"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M39 2v16h16" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M19 26v28h26" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M19 46l10-10 6 4.9L45 30" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="numbers-1">
+        <title>Numbers</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M10 2v60h44V18L38 2H10z"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M38 2v16h16" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M48 54H16m18 0V26h-8v14m8-6h8v20m-16 0V40h-8v14" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="stream-video-1">
+        <title>Stream Video</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <rect data-name="layer2"
+        x="2" y="2" width="60" height="60" rx="10" ry="10" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></rect>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M24 22v20l20-10-20-10z" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="play-video-1">
+        <title>Play Video</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M26 25.4v13.2L40 32l-14-6.6z"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M2 46v8h60v-8m0-28v-8H2v8m20-8v8m20-8v8M22 46v8m20-8v8"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+        stroke-width="2" d="M2 18h60v28H2z" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer2, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="movie-camera-1">
+        <title>Movie Camera</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M48 36l14-6v22l-14-6"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <rect data-name="layer2" x="6" y="28" width="42" height="26" rx="2"
+        ry="2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></rect>
+        <circle data-name="layer1" cx="12" cy="12" r="10" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="36" cy="16" r="6" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="real-estate-1">
+        <title>Real Estate</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" d="M2 29L32 5l30 24" stroke-linejoin="round" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" d="M23 62V40h18v22" stroke-linejoin="round"
+        style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" d="M10 22.6V62h44V8h-9v7.445" stroke-linejoin="round"
+        style="stroke:var(--layer2, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="property-1">
+        <title>Property</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-miterlimit="10"
+        stroke-width="2" d="M54 22.6V8h-9v7.445M40 62h14V29.769M10 30v32h14" stroke-linejoin="round"
+        style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer2" cx="32" cy="29" r="5" fill="none" stroke="#202020"
+        stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <path data-name="layer1" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-miterlimit="10" stroke-width="2" d="M24 42h16v20H24zm8-37L2.436 28.651a.5.5 0 0 0-.036.749l3.287 3.287a.5.5 0 0 0 .668.035L32 12l25.65 20.718a.5.5 0 0 0 .668-.035l3.287-3.283a.5.5 0 0 0-.041-.744z"
+        stroke-linejoin="round" style="stroke:var(--layer1, #202020)"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="page-1">
+        <title>Page</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" d="M2 8h60v12H2zm0 12v36h60V20" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2" d="M14 30h36m-36 8h36m-36 8h20"
+        style="stroke:var(--layer2, #202020)"></path>
+        <circle data-name="layer1" cx="8" cy="14" r="1" fill="none" stroke="#202020"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="stroke:var(--layer2, #202020)"></circle>
+        <circle data-name="layer1" cx="15" cy="14" r="1" fill="none"
+        stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        style="stroke:var(--layer2, #202020)"></circle>
+        <circle data-name="layer1" cx="22" cy="14" r="1" fill="none"
+        stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        style="stroke:var(--layer2, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="list-details-1">
+        <title>List Details</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer1"
+        fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" d="M2 8h60v12H2zm0 12v36h60V20" style="stroke:var(--layer2, #202020)"></path>
+        <path data-name="layer2" fill="none" stroke="#202020" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2" d="M26 30h24m-36 0h4m8 8h24m-36 0h4m8 8h24m-36 0h4"
+        style="stroke:var(--layer2, #202020)"></path>
+        <circle data-name="layer1" cx="8" cy="14" r="1" fill="none" stroke="#202020"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="stroke:var(--layer2, #202020)"></circle>
+        <circle data-name="layer1" cx="15" cy="14" r="1" fill="none"
+        stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        style="stroke:var(--layer2, #202020)"></circle>
+        <circle data-name="layer1" cx="22" cy="14" r="1" fill="none"
+        stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        style="stroke:var(--layer2, #202020)"></circle>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="sorting-1">
+        <title>Sorting</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path data-name="layer2"
+        fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M8 6v44m24-11.999V58m0-52v20.001M56 14v44"
+        stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+        <circle data-name="layer1" cx="8" cy="56" r="6" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="56" cy="8" r="6" fill="none" stroke="#202020"
+        stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        style="stroke:var(--layer1, #202020)"></circle>
+        <circle data-name="layer1" cx="32" cy="32" r="6" fill="none"
+        stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+        stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+      </symbol>
+    </svg>
+    <div class="orion-sprite">
+      <svg width="0" height="0" style="display:block">
+        <defs>
+          <linearGradient id="orion_logo_a" gradientUnits="userSpaceOnUse" x1="13.183"
+          y1="62.808" x2="79.541" y2="62.808">
+            <stop offset="0" stop-color="#FF4581"></stop>
+            <stop offset="1" stop-color="#FF4D63"></stop>
+          </linearGradient>
+          <linearGradient id="orion_logo_b" gradientUnits="userSpaceOnUse" x1="13.177"
+          y1="29.193" x2="79.535" y2="29.193">
+            <stop offset="0" stop-color="#FF4581"></stop>
+            <stop offset="1" stop-color="#FF4D63"></stop>
+          </linearGradient>
+          <linearGradient id="orion_logo_c" gradientUnits="userSpaceOnUse" x1="13.182"
+          y1="33.549" x2="79.533" y2="33.549">
+            <stop offset="0" stop-color="#FF4581"></stop>
+            <stop offset="1" stop-color="#FF4D63"></stop>
+          </linearGradient>
+          <linearGradient id="orion_logo_d" gradientUnits="userSpaceOnUse" x1="13.186"
+          y1="58.453" x2="79.534" y2="58.453">
+            <stop offset="0" stop-color="#FF4581"></stop>
+            <stop offset="1" stop-color="#FF4D63"></stop>
+          </linearGradient>
+          <linearGradient id="orion_logo_e" gradientUnits="userSpaceOnUse" x1="14.32"
+          y1="77.671" x2="79.601" y2="12.39">
+            <stop offset="0" stop-color="#6757FF"></stop>
+            <stop offset="1" stop-color="#0092FF"></stop>
+          </linearGradient>
+          <linearGradient id="orion_logo_f" gradientUnits="userSpaceOnUse" x1="14.33"
+          y1="77.675" x2="79.611" y2="12.394">
+            <stop offset="0" stop-color="#6757FF"></stop>
+            <stop offset="1" stop-color="#0092FF"></stop>
+          </linearGradient>
+          <linearGradient id="orion_logo_g" gradientUnits="userSpaceOnUse" x1="24.694"
+          y1="88.035" x2="89.969" y2="22.76">
+            <stop offset="0" stop-color="#6757FF"></stop>
+            <stop offset="1" stop-color="#0092FF"></stop>
+          </linearGradient>
+          <linearGradient id="orion_logo_h" gradientUnits="userSpaceOnUse" x1="22.838"
+          y1="69.61" x2="69.095" y2="22.453">
+            <stop offset="0" stop-color="#AB2BFF"></stop>
+            <stop offset="1" stop-color="#863CFF"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+      <header class="_1tt2u3t"><a href="https://orioniconlibrary.com/?utm_source=sprite_demo" class="_19kenml"><svg viewBox="0 0 92 92" class="_15372er"><g><ellipse fill="currentColor" cx="46" cy="46" rx="46" ry="46"></ellipse><path fill="url(#orion_logo_a)" d="M26.2 55.4c-.9 1.5-1.6 3.1-2.2 4.6-2.4 5.7-2.3 9.1-2 10.1.3.1.7.1 1.4.1 3.2 0 7.9-1.4 13.3-4.4-4.7-2.1-8.4-5.8-10.5-10.4z"></path><path fill="url(#orion_logo_b)" d="M65.8 36.6c.8-1.5 1.6-3.1 2.2-4.6 2.4-5.7 2.3-9.1 2-10.1-.3-.1-.7-.1-1.4-.1-3.2 0-7.9 1.4-13.3 4.4 4.6 2.1 8.4 5.8 10.5 10.4z"></path><path fill="url(#orion_logo_c)" d="M55.3 13.1c-3-.8-6.1-1.3-9.3-1.3-18.9 0-34.2 15.3-34.2 34.2 0 3.2.5 6.3 1.3 9.3 3.4-8 9.3-16.7 17.4-24.8 8-8.1 16.8-14 24.8-17.4z"></path><path fill="url(#orion_logo_d)" d="M61.5 61.5c-8 8-16.8 14-24.8 17.4 2.9.8 6.1 1.3 9.3 1.3 18.9 0 34.2-15.3 34.2-34.2 0-3.2-.5-6.3-1.3-9.3-3.4 8-9.3 16.8-17.4 24.8z"></path><path fill="url(#orion_logo_e)" d="M78.9 36.7c4.1-9.8 4.4-18.5-.4-23.2-2.4-2.4-5.8-3.5-9.8-3.5-4 0-8.6 1.1-13.4 3.1 11.4 3.2 20.4 12.2 23.6 23.6z"></path><path fill="url(#orion_logo_f)" d="M13.1 55.3c-4.1 9.8-4.4 18.5.4 23.2 2.4 2.4 5.8 3.5 9.8 3.5 4 0 8.6-1.1 13.4-3.1-11.4-3.2-20.4-12.2-23.6-23.6z"></path><path fill="url(#orion_logo_g)" d="M65.8 36.6c-3 5.6-7.4 11.3-12.7 16.5-5.7 5.7-11.4 9.9-16.5 12.7 2.8 1.4 6 2.1 9.4 2.1 12.1 0 21.9-9.8 21.9-21.9 0-3.4-.7-6.5-2.1-9.4z"></path><path fill="url(#orion_logo_h)" d="M78.9 36.7c-3.2-11.4-12.2-20.4-23.6-23.6-8 3.4-16.7 9.3-24.8 17.4-8 8-14 16.8-17.4 24.8 3.2 11.4 12.2 20.4 23.6 23.6 8-3.4 16.7-9.3 24.8-17.4 8.1-8 14-16.8 17.4-24.8zM46 67.9c-3.4 0-6.5-.8-9.4-2.1-5.4 3-10.1 4.4-13.3 4.4-.7 0-1.1-.1-1.4-.1-.2-1.1-.4-4.4 2-10.1.6-1.5 1.4-3 2.2-4.6-1.4-2.8-2.1-6-2.1-9.4 0-12.1 9.8-21.9 21.9-21.9 3.4 0 6.5.8 9.4 2.1 5.4-3 10.1-4.4 13.3-4.4.7 0 1.1.1 1.4.1.2 1 .4 4.4-2 10.1-.6 1.5-1.4 3-2.2 4.6 1.4 2.8 2.1 6 2.1 9.4 0 12.1-9.8 21.9-21.9 21.9z"></path></g></svg><svg viewBox="0 0 128.4 39.8" class="_ksd372"><g fill="currentColor"><path d="M56 13h6v26h-6zm-42 4.8a8 8 0 1 1-8 8 8 8 0 0 1 8-8m0-6a14 14 0 1 0 14 14 14 14 0 0 0-14-14zm68.5 6a8 8 0 1 1-8 8 8 8 0 0 1 8-8m0-6a14 14 0 1 0 14 14 14 14 0 0 0-14-14zm-31.5.3a14 14 0 0 0-16.9 13.7V39h6V25.8A8 8 0 0 1 51 18.3z"></path><circle cx="59" cy="4" r="4"></circle><path d="M128.4 25.8c0-7.7-5.3-14-13-14s-13 6.3-13 14V39h6V25.8c0-4.4 2.6-8 7-8s7 3.6 7 8V39h6z"></path></g></svg></a>
+        <h1
+        class="_dl5j6p _1iurgbx">Autopilots</h1>
+      </header>
+      <section class="_1l5hckq">
+        <p class="_kp2n83">SVG Icons Sprite generated by <a class="_o1cg4g" href="https://orioniconlibrary.com/?utm_source=sprite_demo">Orion Icon Library</a>
+        </p>
+        <h2 class="">Let&#x27;s use your SVG Sprite!</h2>
+        <p class="_14gdf42">Congratulations, your SVG Sprite from <strong>Autopilots</strong> Collection
+          from <a class="_o1cg4g" href="https://orioniconlibrary.com">Orion Icon Library</a> was
+          created successfully!
+          <br/>In the downloaded folder, you will find the file called <code class="_1bo7bzx _1oymxsi">orion-svg-sprite.svg</code> which
+          contains your SVG Sprite <a class="_o1cg4g" href="orion-svg-sprite.svg"
+          download="orion-svg-sprite.svg">[Open]</a>. Please find below different
+          techniques on how to use your Icons in your Web Project.</p>
+        <br/>
+        <h3 id="inline-sprite" class=""><a class="_ovghcs" href="#inline-sprite"><strong class="_1dqtju9">‹a›</strong> Inline SVG Sprite</a></h3>
+        <div class="_fr5wn">
+          <p class="_14gdf42">The first technique consists in including the content of the <code class="_1bo7bzx _1oymxsi">orion-svg-sprite.svg</code> in
+            your <code class="_1bo7bzx _1oymxsi">HTML</code> like in the example below:</p>
+          <pre
+          class="_1bmg5vo"><code class="_1bo7bzx">&lt;body&gt;
+  &lt;svg width=&quot;0&quot; height=&quot;0&quot; class=&quot;hidden&quot; style=&quot;display:none&quot;&gt;
+    &lt;symbol id=&quot;myIcon-1&quot;&gt;
+      &lt;path d=&quot;...&quot;&gt;&lt;/path&gt;
+      &lt;path d=&quot;...&quot; stroke=&quot;...&quot;&gt;&lt;/path&gt;
+    &lt;/symbol&gt;
+    &lt;symbol id=&quot;myIcon-2&quot;&gt;
+      &lt;circle rx=&quot;...&quot;&gt;&lt;/circle&gt;
+      &lt;path d=&quot;...&quot;&gt;&lt;/path&gt;
+    &lt;/symbol&gt;
+    &lt;symbol&gt;...&lt;/symbol&gt;
+  &lt;/svg&gt;
+  &lt;section&gt;Here we will call the Icons references to show them!&lt;/section&gt;
+&lt;/body&gt;</code>
+            </pre>
+            <p class="_14gdf42">Then you can call whenever you want any of the SVG Icons from the sprite,
+              referencing them with the <code class="_1bo7bzx _1oymxsi">&lt;use&gt;</code> element,
+              like:</p><pre class="_1bmg5vo"><code class="_1bo7bzx">&lt;body&gt;
+  &lt;svg width=&quot;0&quot; height=&quot;0&quot; class=&quot;hidden&quot; style=&quot;display:none&quot;&gt;The SVG Sprite&lt;/svg&gt;
+  &lt;section&gt;
+    &lt;svg&gt;
+      &lt;use xlink:href=&quot;#myIcon-1&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+      &lt;use xlink:href=&quot;#myIcon-2&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+  &lt;/section&gt;
+&lt;/body&gt;</code></pre>
+            <p class="_14gdf42"><strong class="_1dqtju9">Pros:</strong> Easy to implement, cross-browser
+              support, unique HTTP request.
+              <br/><strong class="_1oymxsi">Cons:</strong> Adds extra markup in the HTML document,
+              SVG Sprite cannot be cached.
+              <br/><strong>Tips:</strong> Put the SVG Sprite markup before calling them (
+              <a
+              class="_o1cg4g" href="https://gist.github.com/rhawbert/05c7a758cb22d2a1ed24">bug</a>in Safari).</p>
+        </div>
+        <h3 id="external-sprite" class=""><a class="_ovghcs" href="#external-sprite"><strong class="_1dqtju9">‹b›</strong> SVG Sprite in an external file</a></h3>
+        <div class="_fr5wn">
+          <p class="_14gdf42">The second technique consists in referencing the Icons from the SVG sprite
+            as an external file. This allows to display different parts of the SVG
+            Sprite by specifying the <a class="_o1cg4g" href="https://www.w3.org/TR/SVG/linking.html#LinksIntoSVG">fragment identifier</a> at
+            the end of the URL.</p>
+          <p class="_14gdf42">In the <code class="_1bo7bzx _1oymxsi">HTML</code> markup you include your
+            Icons using <code class="_1bo7bzx _1oymxsi">&lt;use&gt;</code> to reference
+            the <code class="_1bo7bzx _1oymxsi">orion-svg-sprite.svg</code> file with
+            the specific <code class="_1bo7bzx _1oymxsi">#fragment</code> ID of each
+            Icon you need. Below an example:</p><pre class="_1bmg5vo"><code class="_1bo7bzx">&lt;body&gt;
+  &lt;section&gt;
+    &lt;svg&gt;
+      &lt;use xlink:href=&quot;orion-svg-sprite.svg#myIcon-1&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+      &lt;use xlink:href=&quot;orion-svg-sprite.svg#myIcon-2&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+  &lt;/section&gt;
+&lt;/body&gt;</code></pre>
+          <p class="_14gdf42"><strong class="_1dqtju9">Pros:</strong> Less cluttered markup. External
+            file is cachable, which helps with page load speed.
+            <br/><strong class="_1oymxsi">Cons:</strong> The browser support is good except
+            for older Internet Explorer versions (IE&lt;9).
+            <br/><strong>Tips:</strong> In case you need to support IE older versions, you
+            can use the great <a class="_o1cg4g" href="https://jonathantneal.github.io/svg4everybody/">svg4everybody</a> plugin.</p>
+        </div>
+        <h3 id="icons" class=""><a class="_ovghcs" href="#icons"><strong class="_1dqtju9">➜</strong> Icons Reference</a></h3>
+        <p class="_14gdf42">Use one of the techniques described before to call the SVG Sprite.
+          <br/>Then select the Icons you need below to easily copy the <code class="_1bo7bzx _1oymxsi">&lt;use&gt;</code> reference
+          and paste it in your Project.</p>
+        <div class="_fr5wn _jro6t0">
+          <p class="_14gdf42" style="margin-right:48px"><strong class="_1dqtju9">Hint</strong> Select the technique you want to
+            use with the switch button.
+            <br/>The use code reference will update with the correct url below the icons
+            <br/>
+            <input type="checkbox" data-name="orion-svg-sprite.svg" id="externalCheckbox"
+            class="_53480w js-external" />
+            <label class="_1uuc6xn" for="externalCheckbox"><span class="_10r524x"></span>
+            </label><small class="_kp2n83 _1dqtju9 _qjqtm8 externalCheckboxHelper"></small>
+          </p>
+          <p class="_14gdf42"><strong class="_1oymxsi">Plus</strong> You can set a specific size for
+            your Icons instances.
+            <br/>This is useful if you need a fixed size and will not style with <code class="_1bo7bzx _1oymxsi">css</code>.
+            <br/>
+            <label class="_kp2n83" style="cursor:pointer">
+              <input type="checkbox" class="js-sizeSwitch" />Ok, I want to specify the size</label>
+            <input type="number" class="js-size _jcgzno"
+            min="0" max="1024" step="1" disabled="" value="64" />
+          </p>
+        </div>
+        <ul class="_1r58n10 js-list">
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#close-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-0">
+                  <use xlink:href="#close-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-0&quot;&gt;&lt;use xlink:href=&quot;#close-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#checkmark-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-0">
+                  <use xlink:href="#checkmark-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-0&quot;&gt;&lt;use xlink:href=&quot;#checkmark-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#rotate-left-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#rotate-left-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#rotate-left-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#portfolio-grid-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#portfolio-grid-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#portfolio-grid-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#more-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-4">
+                  <use xlink:href="#more-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-4&quot;&gt;&lt;use xlink:href=&quot;#more-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#speed-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#speed-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#speed-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#security-shield-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#security-shield-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#security-shield-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#food-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#food-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#food-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#hot-coffee-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#hot-coffee-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#hot-coffee-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#tea-cup-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#tea-cup-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#tea-cup-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#muffin-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#muffin-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#muffin-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#man-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#man-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#man-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#woman-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#woman-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#woman-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#user-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-0">
+                  <use xlink:href="#user-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-0&quot;&gt;&lt;use xlink:href=&quot;#user-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#quality-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#quality-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#quality-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#reading-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#reading-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#reading-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#news-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#news-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#news-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#sun-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#sun-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#sun-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#camera-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#camera-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#camera-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#retro-camera-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#retro-camera-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#retro-camera-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#play-button-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#play-button-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#play-button-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#tv-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#tv-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#tv-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#time-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#time-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#time-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#deadline-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#deadline-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#deadline-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#heartbeat-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#heartbeat-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#heartbeat-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#first-aid-kit-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#first-aid-kit-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#first-aid-kit-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#hospital-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#hospital-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#hospital-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#map-pin-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-0">
+                  <use xlink:href="#map-pin-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-0&quot;&gt;&lt;use xlink:href=&quot;#map-pin-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#pin-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#pin-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#pin-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#map-marker-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#map-marker-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#map-marker-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#cart-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#cart-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#cart-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#shopping-cart-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#shopping-cart-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#shopping-cart-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#paper-bag-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#paper-bag-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#paper-bag-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#retail-bag-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#retail-bag-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#retail-bag-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#dollar-sign-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#dollar-sign-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#dollar-sign-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#dollar-badge-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-35">
+                  <use xlink:href="#dollar-badge-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-35&quot;&gt;&lt;use xlink:href=&quot;#dollar-badge-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#credit-card-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#credit-card-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#credit-card-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#pay-by-card-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#pay-by-card-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#pay-by-card-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#bank-cards-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#bank-cards-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#bank-cards-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#money-box-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#money-box-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#money-box-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#pay-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#pay-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#pay-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#delivery-truck-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#delivery-truck-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#delivery-truck-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#delivery-time-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#delivery-time-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#delivery-time-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#giftbox-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#giftbox-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#giftbox-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#tag-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#tag-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#tag-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#pie-chart-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#pie-chart-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#pie-chart-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#sedan-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#sedan-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#sedan-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#document-saved-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#document-saved-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#document-saved-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#calls-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-0">
+                  <use xlink:href="#calls-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-0&quot;&gt;&lt;use xlink:href=&quot;#calls-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#speaker-call-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#speaker-call-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#speaker-call-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#landline-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#landline-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#landline-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#smartphone-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#smartphone-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#smartphone-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#chats-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#chats-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#chats-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#24h-assistance-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#24h-assistance-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#24h-assistance-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#share-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#share-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#share-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#envelope-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#envelope-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#envelope-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#paper-plane-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#paper-plane-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#paper-plane-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#chat-bubble-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#chat-bubble-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#chat-bubble-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#mental-illness-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#mental-illness-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#mental-illness-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#mental-health-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#mental-health-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#mental-health-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#arrow-target-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#arrow-target-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#arrow-target-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#target-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#target-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#target-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#sales-up-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#sales-up-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#sales-up-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#statistic-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#statistic-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#statistic-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#numbers-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#numbers-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#numbers-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#stream-video-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#stream-video-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#stream-video-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#play-video-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#play-video-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#play-video-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#movie-camera-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#movie-camera-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#movie-camera-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#real-estate-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#real-estate-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#real-estate-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#property-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#property-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#property-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#page-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#page-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#page-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#list-details-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-15">
+                  <use xlink:href="#list-details-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-15&quot;&gt;&lt;use xlink:href=&quot;#list-details-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+          <li class="_fnhcyz js-item">
+            <div class="_1dclzhk">
+              <p class="_19wnp26 _1iurgbx orion-sprite__id">#sorting-1</p>
+              <div class="_1u0lyeu">
+                <svg class="_190hxbq theme-line-2">
+                  <use xlink:href="#sorting-1"></use>
+                </svg>
+              </div><pre class="_1bmg5vo _1mcpc5v orion-sprite__code"><code class="js-iconCode">&lt;svg class=&quot;theme-line-2&quot;&gt;&lt;use xlink:href=&quot;#sorting-1&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="_1l5hckq">
+        <h3 id="styles" class=""><a class="_ovghcs" href="#styles"><strong class="_1dqtju9">❧</strong> CSS Styles and Variables</a></h3>
+        <p class="_14gdf42">You selected the options to generate the SVG Sprite with external color
+          <code
+          class="_1bo7bzx _1oymxsi">css</code>classes.
+            <br/>That means that <span class="_1dqtju9">Orion</span> detected if your icons
+            had different color layers and created a class and stylesheet for you to
+            edit the icons color properties.
+            <br/><strong class="_1dqtju9">Try me!</strong> The color classes below are editable.
+            Make your changes in real time and paste it directly into your project.</p>
+        <style
+        class="_duacj0 _1bo7bzx" contenteditable="true">.theme-line-0 { --layer1: #202020;} .theme-line-2 { --layer2: #202020;
+          --layer1: #202020;} .theme-line-4 { --layer3: #202020; --layer2: #202020;
+          --layer1: #202020;} .theme-line-15 { --layer1: #202020; --layer2: #202020;}
+          .theme-line-35 { --layer2: #202020;}</style>
+          <p class="_14gdf42"><strong class="_1oymxsi">Support:</strong> Since our Icons can have several
+            Layers, this technique take advantage of the <a class="_o1cg4g" href="https://drafts.csswg.org/css-variables/">CSS Custom Properties</a>.
+            <br/>This has a <a class="_o1cg4g" href="http://caniuse.com/#search=css%20variables">good browser support</a> except
+            for older IE versions. In those browsers the original color will be used
+            as a fallback.</p>
+      </section>
+      <section class="_1l5hckq">
+        <h3 id="links" class=""><a class="_ovghcs" href="#links"><strong class="_1dqtju9">⊙</strong> Useful links</a></h3>
+        <p class="_14gdf42">You can find a lot of information on the Internet about <code class="_1bo7bzx _1oymxsi">SVG</code>.
+          <br/>We made a little selection for you if you want to learn more.</p>
+        <ul class="_fr5wn _1hgbkkp">
+          <li><a href="https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/?utm_source=orioniconlibrary.com&amp;utm_medium=demo"
+            class="_o1cg4g">Styling SVG &lt;use&gt; Content with CSS</a>, by <a href="https://twitter.com/SaraSoueidan"
+            class="_o1cg4g">Sara Soueidan</a>
+          </li>
+          <li><a href="http://codepen.io/AmeliaBR/post/customizable-svg-icons-css-variables?utm_source=orioniconlibrary.com&amp;utm_medium=demo"
+            class="_o1cg4g">Customizable SVG Icons with CSS Variables</a> by <a href="https://twitter.com/AmeliasBrain"
+            class="_o1cg4g">Amelia Bellamy-Royds</a>
+          </li>
+          <li><a href="https://css-tricks.com/a-complete-guide-to-svg-fallbacks/?utm_source=orioniconlibrary.com&amp;utm_medium=demo"
+            class="_o1cg4g">A Complete Guide to SVG Fallbacks</a> by <a href="https://twitter.com/AmeliasBrain"
+            class="_o1cg4g">Amelia Bellamy-Royds</a>
+          </li>
+          <li><a href="https://css-tricks.com/mega-list-svg-information/?utm_source=orioniconlibrary.com&amp;utm_medium=demo"
+            class="_o1cg4g">A Compendium of SVG Information</a> by <a href="https://twitter.com/chriscoyier"
+            class="_o1cg4g">Chris Coyier</a>
+          </li>
+          <li><a href="http://svgpocketguide.com/?utm_source=orioniconlibrary.com&amp;utm_medium=demo"
+            class="_o1cg4g">The Pocket Guide to Writing SVG</a> by <a href="https://twitter.com/jonitrythall"
+            class="_o1cg4g">Joni Trythall</a>
+          </li>
+          <li><a href="https://css-tricks.com/icon-fonts-vs-svg/?utm_source=orioniconlibrary.com&amp;utm_medium=demo"
+            class="_o1cg4g">Inline SVG vs Icon Fonts [CAGEMATCH]</a> by <a href="https://twitter.com/chriscoyier"
+            class="_o1cg4g">Chris Coyier</a>
+          </li>
+          <li><a href="https://sarasoueidan.com/blog/svg-coordinate-systems/?utm_source=orioniconlibrary.com&amp;utm_medium=demo"
+            class="_o1cg4g">Understanding SVG Coordinate Systems and Transformations</a>,
+            the whole serie by <a href="https://twitter.com/SaraSoueidan" class="_o1cg4g">Sara Soueidan</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script>
+      // Text Selection
+      function selectText (element) {
+        var doc = document,
+            text = element,
+            range,
+            selection;
+        if (doc.body.createTextRange) {
+            range = document.body.createTextRange();
+            range.moveToElementText(text);
+            range.select();
+        } else if (window.getSelection) {
+            selection = window.getSelection();
+            if(selection.toString().length === 0){
+              range = document.createRange();
+              range.selectNodeContents(text);
+              selection.removeAllRanges();
+              selection.addRange(range);
+            }
+        }
+      };
+
+      var items = document.querySelectorAll('.js-item');
+      [].slice.call(items).forEach(function(elem, i){
+        items[i].addEventListener('click', function(){
+          selectText(this.querySelector('code'))
+        }, false);
+      });
+
+      var iconsCode = document.querySelectorAll('.js-iconCode');
+
+      // External file Checkbox
+      var extChbx = document.querySelector('.js-external');
+      var extFilename = extChbx.dataset.name;
+      extChbx.addEventListener('change', function(e) {
+        if (e.target.checked) {
+          [].slice.call(iconsCode).forEach(function(elem, i){
+            iconsCode[i].innerHTML = iconsCode[i].innerHTML.replace('#', extFilename+'#')
+          });
+        } else {
+          [].slice.call(iconsCode).forEach(function(elem, i){
+            iconsCode[i].innerHTML = iconsCode[i].innerHTML.replace(extFilename+'#', '#')
+          });
+        }
+      });
+
+      // Specific Size
+      var size = document.querySelector('.js-size');
+      var sizeSwitch = document.querySelector('.js-sizeSwitch');
+
+      sizeSwitch.addEventListener('change', function(e) {
+        if (e.target.checked) {
+          size.disabled = false;
+          size.focus();
+          [].slice.call(iconsCode).forEach(function(elem, i){
+            elem.innerHTML = elem.innerHTML.replace('&lt;svg', '&lt;svg width="'+size.value+'" height="'+size.value+'"')
+          });
+        } else {
+          size.disabled = true;
+          [].slice.call(iconsCode).forEach(function(elem, i){
+            sizeStringHandler(elem)
+          });
+        }
+      }, false);
+
+      size.addEventListener('input', function(e) {
+        var val = e.target.value;
+        [].slice.call(iconsCode).forEach(function(elem, i){
+          sizeStringHandler(elem, val)
+        });
+      }, false);
+
+      function sizeStringHandler (elem, value) {
+        var regex = /(\S+)=["']?((?:.(?!["']?\s+(?:\S+)=|[>"']))+.)["']?/g
+        elem.innerHTML = elem.innerHTML.replace(regex, function (match, $1, $2) {
+          if ($1 === 'width' || $1 === 'height') {
+            if (value) {
+              return $1 + '="' + value + '"'
+            } else {
+              return ''
+            }
+          }
+          return match
+        })
+
+        if (!value) {
+          elem.innerHTML = elem.innerHTML.replace(/  +/g, ' ');
+        }
+      }
+
+
+        // ContentEditable
+        document.querySelector("[contenteditable]").addEventListener("paste", function(e) {
+          e.preventDefault();
+          var text = e.clipboardData.getData("text/plain");
+          document.execCommand("insertHTML", false, text);
+        });
+    </script>
+  </body>
+
+</html>
