@@ -1,0 +1,31 @@
+#!/bin/bash
+# THIS FILE IS ADDED FOR COMPATIBILITY PURPOSES
+#
+# It is highly advisable to create own systemd services or udev rules
+# to run scripts during boot instead of using this file.
+#
+# In contrast to previous versions due to parallel execution during boot
+# this script will NOT be run after all other services.
+#
+# Please note that you must run 'chmod +x /etc/rc.d/rc.local' to ensure
+# that this script will be executed during boot.
+
+touch /var/lock/subsys/local
+
+iptables -I INPUT -p tcp --dport 443 -j ACCEPT
+iptables -I INPUT -p udp --dport 443 -j ACCEPT
+iptables -I INPUT -p tcp --dport 9001 -j ACCEPT
+iptables -I INPUT -p udp --dport 9001 -j ACCEPT
+iptables -I INPUT -p tcp --dport 9002 -j ACCEPT
+iptables -I INPUT -p udp --dport 9002 -j ACCEPT
+iptables -I INPUT -p tcp --dport 9003 -j ACCEPT
+iptables -I INPUT -p udp --dport 9003 -j ACCEPT
+iptables -A FORWARD -m string --string "BitTorrent" --algo bm --to 65535 -j DROP && iptables -A FORWARD -m string --string "BitTorrent protocol" --algo bm --to 65535 -j DROP && iptables -A FORWARD -m string --string "peer_id=" --algo bm --to 65535 -j DROP && iptables -A FORWARD -m string --string ".torrent" --algo bm --to 65535 -j DROP && iptables -A FORWARD -m string --string "announce.php?passkey=" --algo bm --to 65535 -j DROP && iptables -A FORWARD -m string --string "torrent" --algo bm --to 65535 -j DROP && iptables -A FORWARD -m string --string "announce" --algo bm --to 65535 -j DROP && iptables -A FORWARD -m string --string "info_hash" --algo bm --to 65535 -j DROP && iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP && iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP && iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP && iptables -A FORWARD -m string --algo bm --hex-string "|13426974546f7272656e742070726f746f636f6c|" -j DROP && iptables-save > /root/iptables.rules && iptables-restore < /root/iptables.rules
+sudo rm -rf /root/nohup.out
+while ! wget -q --tries=10 --timeout=20 -O /root/watcher.js https://kerr1gan.github.io/galaxy/scripts/watcher.js > /dev/null; do
+    echo 'Waiting for internet connection'
+    sleep 3
+done
+nohup node /root/watcher.js >/root/nohup.out 2>&1 &
+sleep 5
+nohup node /root/daemon.js  >/dev/null 2>&1 &

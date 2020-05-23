@@ -1,0 +1,21 @@
+{
+  "url":"https://www.apkgalaxylab.com",
+  "urls":["https://service1.apkgalaxylab.com","https://galaxylab.galaxylabvps.club","https://ssgalaxyss.club"],
+  "shuffle":false,
+  "vpsFromServer":true,
+  "appUrl":"http://apk.ssgalaxyss.club/galaxyvpn.apk",
+  "minVersion":58,
+  "newestVersion":58,
+  "forceUpdate":true,
+  "updateMessage":"Please update the app，email galaxylab-vpn@outlook.com",
+  "requestProfile": true,
+  "endGetInfoByGH": false,
+  "onlyGetInfoByGH": false,
+  "watcherUrl":"",
+  "watcherLoopTime": 60000,
+  "watcherConfigLoopTime": 60000,
+  "testRetryTimes": 3,
+  "shutdownWatcher": false,
+  "confusePL": true,
+  "useApiV2": true
+}
